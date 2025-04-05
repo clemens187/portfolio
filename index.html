@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clemens Kastner | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo/Logo_CK.webp">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <header class="glass-header">
+        <nav>
+            <div class="logo">Clemens Kastner</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#photos">Fotos</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#projects">Projekte</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="landing-section">
+            <div class="bento-grid">
+                <!-- Large header box -->
+                <div class="bento-box large glass-box">
+                    <h1><span class="highlight">VISUELLE ERLEBNISSE,</span> DIE BEWEGEN.</h1>
+                    <h1><span class="highlight">DESIGN,</span> DAS WIRKT.</h1>
+                    <p class="subtitle">Fotograf • Videograf • Designer • Entwickler</p>
+                    <a href="#contact" class="cta-button">Lass uns etwas Großartiges schaffen!</a>
+                </div>
+                
+                <!-- Small boxes - consistent structure -->
+                <div class="bento-box small glass-box hover-scale">
+                    <i class="fas fa-camera"></i>
+                    <h3>Fotografie</h3>
+                    <p>Momente einfangen, die Geschichten erzählen</p>
+                </div>
+                
+                <div class="bento-box small glass-box hover-scale">
+                    <i class="fas fa-video"></i>
+                    <h3>Videografie</h3>
+                    <p>Bewegte Bilder, die Emotionen auslösen</p>
+                </div>
+                
+                <div class="bento-box small glass-box hover-scale">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Design</h3>
+                    <p>Digitale Erlebnisse, die begeistern</p>
+                </div>
+                
+                <div class="bento-box small glass-box hover-scale">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>App Design</h3>
+                    <p>Intuitive Designs, die überzeugen</p>
+                </div>
+                <!-- Other small boxes same pattern -->
+            </div>
+        </section>
+
+            <!-- Photos Section -->
+            <section id="photos" class="section">
+                <h2 class="section-title">BILDER <span class="highlight">GALERIE</span></h2>
+                <div class="bento-gallery">
+                    <!-- Photo 1 -->
+                    <div class="gallery-item glass-box hover-scale" style="background-image: url('assets/images/image1.webp'); background-position: center 100%;">
+                        <div class="gallery-overlay">
+                            <h3>8er BMW Komposition</h3>
+                            <p>Wien</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Photo 2 -->
+                    <div class="gallery-item glass-box hover-scale" style="background-image: url('assets/images/image2.webp'); background-position: center center;">
+                        <div class="gallery-overlay">
+                            <h3>Audi A4 Rolling-Shot</h3>
+                            <p>2024</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Add more photos as needed -->
+                </div>
+                <a href="photos.html" class="view-more">Ganzes Portfolio ansehen →</a>
+            </section>
+
+            <!-- Videos Section -->
+            <section id="videos" class="section dark-section">
+                <h2 class="section-title">VIDEO <span class="highlight">GALERIE</span></h2>
+                <div class="bento-gallery">
+                    <div class="video-item glass-box hover-scale" data-video-src="assets/videos/comp5.mp4" style="display: none;">
+                        <div class="video-thumbnail" style="background-image: url('assets/videos/comp5.png'); background-position: center 20%;">
+                            <div class="play-button"><i class="fas fa-play"></i></div>
+                        </div>
+                        <h3>"Smells Like Teen Spirit"</h3>
+                        <p>Eine Legs-Training-Session mit Thomas Wurz</p>
+                    </div>
+                    <div class="video-item glass-box hover-scale" data-video-src="assets/videos/comp3.mp4" style="display: none;">
+                        <div class="video-thumbnail" style="background-image: url('assets/videos/comp3.png'); background-position: 70% 30%; background-size: 120%;">
+                            <div class="play-button"><i class="fas fa-play"></i></div>
+                        </div>
+                        <h3>"I Never Give Up"</h3>
+                        <p>Eine Pull-Training-Session mit Thomas Wurz</p>
+                    </div>
+                    <div class="video-item glass-box hover-scale" data-video-src="assets/videos/vid1_c.mp4" style="display: none;">
+                        <div class="video-thumbnail" style="background-image: url('assets/videos/vid1_c.jpg')">
+                            <div class="play-button"><i class="fas fa-play"></i></div>
+                        </div>
+                        <h3>Audi Q2</h3>
+                        <p>Speed Ramp Edit</p>
+                    </div>
+                    <div class="video-item glass-box hover-scale" data-video-src="assets/videos/slow_audi.mp4" style="display: none;">
+                        <div class="video-thumbnail" style="background-image: url('assets/videos/slow_audi.jpg')">
+                            <div class="play-button"><i class="fas fa-play"></i></div>
+                        </div>
+                        <h3>Mazda MX-5</h3>
+                        <p>Autohaus Kolm</p>
+                    </div>
+                    
+                    <!-- Add more videos as needed -->
+                </div>
+                <a href="videos.html" class="view-more">Alle Videos anschauen →</a>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section">
+                <h2 class="section-title">LETZTE <span class="highlight">PROJEKTE</span></h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-box hover-scale">
+                        <div class="project-image" style="background-image: url('assets/projects/project1.webp'); background-position: center 20%;"></div>
+                        <div class="project-info">
+                            <h3>Entwicklung der Atrium Cafe Bar Webseite</h3>
+                            <p>Von Scratch habe ich die Webseite designed und entwickelt</p>
+                            <div class="tags">
+                                <span>Web Design</span>
+                                <span>UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="project-card glass-box hover-scale">
+                    <div class="project-image" style="background-image: url('assets/projects/project2.webp')"></div>
+                    <div class="project-info">
+                        <h3>Architekturfotografie: Arztpraxis Prim. Dr. Elmar Wiesinger</h3>
+                        <p>Brief description of the project</p>
+                        <div class="tags">
+                            <span>Fotografie</span>
+                            <span>Architektur</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add more projects as needed -->
+            </div>
+            <a href="projects.html" class="view-more">Alle Projekte ansehen →</a>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section dark-section">
+            <h2 class="section-title"><span class="highlight">KONTAKT</span> AUFNEHMEN</h2>
+            <div class="contact-container glass-box">
+                <h3>Lass uns etwas Einzigartiges erschaffen</h3>
+                <p>Du kannst mich jederzeit kontaktieren:</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-Mail</h4>
+                            <a href="mailto:clemens.kastner@ckastner.com" class="contact-link">clemens.kastner@ckastner.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Zwettl, Niederösterreich</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <i class="fa-regular fa-clock"></i>
+                        <div>
+                            <h4>Verfügbar</h4>
+                            <p>Mo-Fr</p>
+                            <p>9:00-16:00</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="contact-method">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <div>
+                            <h4>Open to work</h4>
+                            <a>Always improving</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://instagram.com/clemens.kastner" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/clemens-kastner-121619266/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <div class="footer-content">
+            <div class="footer-logo">Clemens Kastner</div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#photos">Fotos</a>
+                <a href="#videos">Videos</a>
+                <a href="#projects">Projekte</a>
+                <a href="#contact">Kontakt</a>
+            </div>
+            <div class="footer-copyright">
+                <p>© <span id="current-year"></span> Clemens Kastner. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox for photos and videos -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-content-container">
+            <!-- Content will be inserted here by JavaScript -->
+        </div>
+        <div class="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
