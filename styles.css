@@ -259,6 +259,20 @@ main {
 .video-box {
     padding: 1.5rem;
 }
+/* Initially hide the video items and position them absolutely so they don't affect the layout */
+.hidden-video {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute; /* Removes it from the layout flow */
+}
+
+/* Make visible with transition */
+.visible-video {
+    visibility: visible;
+    opacity: 1;
+    position: relative; /* Restores it back to the layout flow */
+    transition: opacity 0.5s ease; /* Smooth transition */
+}
 
 .video-thumbnail {
     height: 200px;
