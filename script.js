@@ -2,13 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     
-    // Custom Cursor
-    const cursor = document.querySelector('.cursor');
-    
-    document.addEventListener('mousemove', (e) => {
-        cursor.style.left = e.pageX + 'px';
-        cursor.style.top = e.pageY + 'px';
-    });
     
     // Links hover effect
     const links = document.querySelectorAll('a, button, .hover-scale');
