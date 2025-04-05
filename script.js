@@ -1,28 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    window.addEventListener('DOMContentLoaded', () => {
-        const videoItems = document.querySelectorAll('.video-item');
-        
-        if (videoItems.length < 2) return;
-    
-        // Hide all videos initially using the hidden-video class
-        videoItems.forEach(item => {
-            item.classList.add('hidden-video');
-        });
-    
-        // Pick two different random indices
-        let firstIndex = Math.floor(Math.random() * videoItems.length);
-        let secondIndex;
-        do {
-            secondIndex = Math.floor(Math.random() * videoItems.length);
-        } while (secondIndex === firstIndex);
-    
-        // Show the selected videos by removing the hidden-video class and adding visible-video class
-        videoItems[firstIndex].classList.remove('hidden-video');
-        videoItems[firstIndex].classList.add('visible-video');
-        
-        videoItems[secondIndex].classList.remove('hidden-video');
-        videoItems[secondIndex].classList.add('visible-video');
-    });
     
     
     // Links hover effect
