@@ -119,6 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 video.className = 'lightbox-video';
                 video.controls = true;
                 video.autoplay = true;
+                video.volume = 0.75;
                 
                 const source = document.createElement('source');
                 source.src = videoSrc;
