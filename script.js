@@ -120,6 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 video.controls = true;
                 video.autoplay = true;
                 video.volume = 0.75;
+                video.loop = true;
                 
                 const source = document.createElement('source');
                 source.src = videoSrc;
